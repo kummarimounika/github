@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>Roll</td>
+			<td>Name</td>
+			<td>Age</td>
+		</tr>
+		<tr th:each="student : ${student}">
+			<td th:text="${student.roll}"></td>
+			<td th:text="${student.name}"></td>
+			<td th:text="${student.age}"></td>
+		</tr>
+	</table>
+</body>
+</html>
